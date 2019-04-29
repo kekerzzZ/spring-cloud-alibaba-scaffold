@@ -1,0 +1,10 @@
+server:
+  port: 8884
+spring:
+  application:
+    name: service-system
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.216.201:8848 #注册中心地址

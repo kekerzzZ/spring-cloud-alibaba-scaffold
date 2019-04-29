@@ -1,0 +1,21 @@
+server:
+  port: 8883
+
+spring:
+  application:
+    name: service-user
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.216.201:8848 #nacos 配置注册中心
+    sentinel:
+      transport:
+        dashboard: 192.168.216.201:8080 #sentinel dashborad 地址
+        port: 8719 #客户端ip
+        heartbeat-interval-ms: 1000
+      eager: true
+
+feign:
+  sentinel:
+    enabled: true
+
