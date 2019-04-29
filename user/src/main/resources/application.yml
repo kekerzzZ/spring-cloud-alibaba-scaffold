@@ -1,9 +1,9 @@
 server:
-  port: 8883
+  port: 8883 #端口号
 
 spring:
   application:
-    name: service-user
+    name: service-user #应用名称
   cloud:
     nacos:
       discovery:
@@ -12,10 +12,10 @@ spring:
       transport:
         dashboard: 192.168.216.201:8080 #sentinel dashborad 地址
         port: 8719 #客户端ip
-        heartbeat-interval-ms: 1000
+        heartbeat-interval-ms: 1000 #发送心跳时间间隔
       eager: true
 
 feign:
   sentinel:
-    enabled: true
+    enabled: true #开启feign对sentinel的支持
 

@@ -1,6 +1,5 @@
 package com.zhaoke.web;
 
-import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PostMapping;

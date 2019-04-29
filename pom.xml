@@ -24,6 +24,7 @@
         <jackson.version>2.9.8</jackson.version>
         <tomcat.version>2.1.4.RELEASE</tomcat.version>
         <spring-cloud-alibaba.version>0.9.0.RELEASE</spring-cloud-alibaba.version>
+        <alibaba-csp.version>1.6.0</alibaba-csp.version>
     </properties>
 
     <dependencyManagement>
@@ -101,7 +102,7 @@
             <dependency>
                 <groupId>com.alibaba.csp</groupId>
                 <artifactId>sentinel-datasource-nacos</artifactId>
-                <version>1.6.0</version>
+                <version>${alibaba-csp.version}</version>
             </dependency>
 
         </dependencies>
